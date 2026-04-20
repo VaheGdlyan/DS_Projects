@@ -1,0 +1,30 @@
+# ========================
+# DS_Projects .gitignore
+# ========================
+# Virtual environments
+venv/
+.venv/
+env/
+# Jupyter checkpoints
+.ipynb_checkpoints/
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+# OS junk
+__MACOSX/
+.DS_Store
+Thumbs.db
+desktop.ini
+# Task description files (private)
+*.docx
+# IDE settings
+.vscode/
+.idea/
+# Environment variables
+.env
+
+# ========================
+# Datasets (Ignored)
+# ========================
+*.csv
