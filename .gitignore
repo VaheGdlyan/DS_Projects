@@ -27,4 +27,17 @@ desktop.ini
 # ========================
 # Datasets (Ignored)
 # ========================
+*.csv 
+
+# ========================
+# Datasets & Models (Ignored)
+# ========================
 *.csv
+*.xlsx
+*.parquet
+
+# ML Model Artifacts
+*.pkl
+*.joblib
+*.h5
+*.pt
