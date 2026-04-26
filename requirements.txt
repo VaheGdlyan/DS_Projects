@@ -115,3 +115,7 @@ webencodings==0.5.1
 websocket-client==1.9.0
 widgetsnbextension==4.0.15
 xgboost==3.2.0
+catboost==1.2.10
+missingno==0.5.2
+optuna==4.8.0
+shap==0.51.0
