@@ -140,11 +140,8 @@ DS_Projects/
 |    
 ├── task_2_testing_analysis.ipynb      # A/B test integrity, hypothesis testing, recommendation
 |    |
-|    event_data.csv
-|    train.csv
-|    ab_test_data.csv
-|    test.csv 
-
+|    ab_test_data.csv 
+|
 ├── task_3_notebook.ipynb              # Two-stage hurdle model, calibration, feature audit
 |    |
 |    train.csv
