@@ -135,7 +135,8 @@ DS_Projects/
 ├── task_1_subscription_funnel.ipynb    # Funnel construction, segmentation, product hypotheses
 |    |
 |    app_data.csv
-|    ab_test_data.csv
+|    event_data.csv
+
 |   
 |    
 ├── task_2_testing_analysis.ipynb      # A/B test integrity, hypothesis testing, recommendation
