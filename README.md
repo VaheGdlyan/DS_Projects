@@ -40,8 +40,14 @@ Only 10.5% of users (4,099 / 38,730) open the registration screen. Of those, 44%
 **Insight 3: Platform and geography stratify conversion quality.**  
 Apple users convert at the bottom of the funnel at a higher absolute volume (59 vs. 33 subscriptions) despite lower top-of-funnel volume. Germany — the smallest market by raw event volume — outperforms Brazil, Vietnam, and Egypt in late-stage conversion relative to size, reflecting macroeconomic purchasing power differentials that require localized pricing (PPP) to address.
 
-> 📊 **Segmented Funnel Analysis**
-> ![Android vs Apple Funnel](C:\Users\Home\Desktop\DS_Projects\images\output_android_ios.png) 
+<br>
+
+**Segmented Funnel Analysis — Android vs. Apple**
+
+![Funnel Conversion: Android vs Apple](images/output_android_ios.png)
+
+> Apple dominates bottom-of-funnel conversion (59 vs. 33 subscriptions) despite Android's 24,766 vs. 13,964 top-of-funnel advantage. The gap narrows progressively, confirming iOS users carry structurally higher purchasing intent.
+
 ---
 
 ### Stage 2 — Experimental Validation (A/B Test)
@@ -60,8 +66,13 @@ Variant B produced a statistically significant increase in revenue quality. Aver
 
 **Decision:** Ship Variant B via staged rollout — 20% → 50% → 100% traffic. Flag the Oct 10–11 daily RPV anomaly for engineering review before the 50% gate opens.
 
-> 📊 **Conversion Rates with 95% Confidence Intervals**
-> ![Variant A vs Variant B Conversion Rates](C:\Users\Home\Desktop\DS_Projects\images\output_variantA_variantB.png) 
+<br>
+
+**Conversion Rate with 95% Confidence Intervals (Wilson)**
+
+![Variant A vs Variant B Conversion Rates](images/output_variantA_variantB.png)
+
+> Variant A: 0.4742% | Variant B: 0.4946%. Overlapping CIs are expected — the conversion delta is statistically flat. Revenue quality, not volume, is the differentiating signal.
 
 ---
 
@@ -92,8 +103,13 @@ Platt Scaling eliminated systematic probability inflation from `scale_pos_weight
 - `first_paid_tap_hour` — speed to first monetization touchpoint ("Golden Window")
 - `engagement_score` — session depth distinguishing active users from passive ones
 
-> 📊 **Reliability Curves: Uncalibrated vs. Platt-Scaled Probabilities**
-> ![Reliability Curves](C:\Users\Home\Desktop\DS_Projects\images\output_normal+platt-scaled.png)
+<br>
+
+**Reliability Diagram — Uncalibrated vs. Platt-Scaled Probabilities**
+
+![Reliability Curves](images/output_normal_platt-scaled.png)
+
+> The uncalibrated model (red) assigns probabilities up to 0.95 while actual payer frequency never exceeds 0.22 — a catastrophic overconfidence. Platt Scaling (green) collapses the prediction space to the true operational range, bringing model output into alignment with real-world payer frequency.
 
 ---
 
@@ -114,18 +130,34 @@ The system does not produce insights — it produces decisions with confidence i
 ## Project Structure
 
 ```
-freemium-revenue-intelligence/
+DS_Projects/
 │
-├── task_1_subscription_funnel.ipynb   # Funnel construction, segmentation, product hypotheses
+├── task_1_subscription_funnel.ipynb    # Funnel construction, segmentation, product hypotheses
+|    |
+|    app_data.csv
+|    ab_test_data.csv
+|   
+|    
 ├── task_2_testing_analysis.ipynb      # A/B test integrity, hypothesis testing, recommendation
+|    |
+|    event_data.csv
+|    train.csv
+|    ab_test_data.csv
+|    test.csv 
+
 ├── task_3_notebook.ipynb              # Two-stage hurdle model, calibration, feature audit
+|    |
+|    train.csv
+|    test.csv
 │
-├── data/
-│   ├── app_open_data.csv
-│   ├── event_data.csv
-│   ├── ab_test_data.csv
-│   ├── train.csv
-│   └── test.csv
+├── images/
+│   ├── output_android_ios.png
+│   ├── output_variantA_variantB.png
+│   └── output_normal_platt-scaled.png
+│
+├      
+│    
+│   
 │
 └── README.md
 ```
