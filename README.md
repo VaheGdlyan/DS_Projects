@@ -206,4 +206,8 @@ All random states are fixed (`SEED = 42`). Results are deterministic across envi
 | High | PPP pricing experiment in Brazil / Vietnam | Geographic CR variance is statistically confirmed; unit price reduction may unlock volume |
 | Medium | Real-time user scoring pipeline (D1 → D3 signal ingestion) | Model is trained on D1–D3 signals; deploying at D3 enables early lifecycle intervention |
 | Medium | Multi-market model stratification | 100% of payers in current dataset are US-based; separate models per region would improve generalization |
-| Low | Replace Platt Scaling with Isotonic Regression calibration | Isotonic is non-parametric and may outperform Platt on non-sigmoid miscalibration shapes |
+| Low | Replace Platt Scaling with Isotonic Regression calibration | Isotonic is non-parametric and may outperform Platt on non-sigmoid miscalibration shapes | 
+
+**🤝 Let's connect and collaborate:**
+[![Medium](https://img.shields.io/badge/Medium-Read%20Article-black?logo=medium)](https://medium.com/@gdlyanvahe31/the-a-b-test-stress-test-pipeline-45de32f54523)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/vahe-gdlyan-1415873a7/)
