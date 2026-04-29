@@ -11,7 +11,7 @@ The core question is not *what is the conversion rate* — it is *why it is this
 
 This system answers all three.
 
-Learn about the A/B test, see the [whole explanations here](https://medium.com/@gdlyanvahe31/the-a-b-test-stress-test-pipeline-45de32f54523)
+[![Medium](https://img.shields.io/badge/Medium-Read%20Article-black?logo=medium)](https://medium.com/@gdlyanvahe31/the-a-b-test-stress-test-pipeline-45de32f54523)
 ---
 
 ## System Overview
