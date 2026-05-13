@@ -11,7 +11,7 @@ The core question is not *what is the conversion rate* — it is *why it is this
 
 This system answers all three.
 
-[![Medium](https://img.shields.io/badge/Medium-Read%20Article-black?logo=medium)](https://medium.com/@gdlyanvahe31/the-a-b-test-stress-test-pipeline-45de32f54523)
+[![Medium](https://img.shields.io/badge/Medium-Read%20Article-black?logo=medium)](https://medium.com/@gdlyanvahe31)
 ---
 
 ## System Overview
@@ -209,5 +209,5 @@ All random states are fixed (`SEED = 42`). Results are deterministic across envi
 | Low | Replace Platt Scaling with Isotonic Regression calibration | Isotonic is non-parametric and may outperform Platt on non-sigmoid miscalibration shapes | 
 
 **🤝 Let's connect and collaborate:**
-[![Medium](https://img.shields.io/badge/Medium-Read%20Article-black?logo=medium)](https://medium.com/@gdlyanvahe31/the-a-b-test-stress-test-pipeline-45de32f54523)
+[![Medium](https://img.shields.io/badge/Medium-Read%20Article-black?logo=medium)](https://medium.com/@gdlyanvahe31)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/vahe-gdlyan-1415873a7/)
